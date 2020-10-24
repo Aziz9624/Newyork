@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "d5372249-7b44-4ca5-9801-b691daf34c26",
+		"name": "Newyorkproject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Positive",
+			"item": [
+				{
+					"name": "Company User Login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"content-type": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n\"phone_number\": \"01701395491\",\r\n\"firebase_id\": \"firebase_ididid\",\r\n\"secret_text\": \"the_super_secret_text\",\r\n\"phone_number_int\": \"+8801701395491\",\r\n\"iso_code\": \"BD\"\r\n\r\n}"
+						},
+						"url": {
+							"raw": "{{AuthUrl}}/api/v1/field-force/auth/user-login",
+							"host": [
+								"{{AuthUrl}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"field-force",
+								"auth",
+								"user-login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Negetive",
+			"item": [],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
